@@ -77,6 +77,7 @@
     <Content Include="TeacherDashboard.aspx" />
     <Content Include="Users.aspx" />
     <Content Include="Web.config" />
+    <Content Include="GradeBook.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdministratorDashboard.aspx.cs">
@@ -101,6 +102,7 @@
     </Compile>
     <Compile Include="Logout.aspx.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
@@ -133,6 +135,13 @@
     </Compile>
     <Compile Include="TeacherDashboard.aspx.designer.cs">
       <DependentUpon>TeacherDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GradeBook.aspx.cs">
+      <DependentUpon>GradeBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GradeBook.aspx.designer.cs">
+      <DependentUpon>GradeBook.aspx</DependentUpon>
     </Compile>
     <Compile Include="Users.aspx.cs">
       <DependentUpon>Users.aspx</DependentUpon>
