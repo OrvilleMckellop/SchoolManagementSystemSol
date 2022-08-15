@@ -129,13 +129,7 @@ body {
     /* Margin bottom by footer height */
     margin: 0;
     background-color: #e6f9ff;
-}    position: absolute;
-    bottom: 0;
-    width: 100%;
-    white-space: nowrap;
-    line-height: 60px; /* Vertically center the text there */
-    text-align: center;
-}
+}    
 
 
 table, th {
@@ -145,7 +139,10 @@ table, th {
 
 table {
     border-collapse: collapse;
-    width: 100%
+    margin: 40px 40px;
+    background-color:white;
+    border: 10px ;
+
 }
 
 th {
@@ -256,3 +253,4 @@ nav a:hover {
     padding: 10px;
    margin:auto auto auto auto ;
 }
+
