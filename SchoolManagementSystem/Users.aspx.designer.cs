@@ -22,16 +22,5 @@ namespace SchoolManagementSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal DynamicTable;
-
-        protected global::System.Web.UI.WebControls.GridView UserGrid;
-        protected global::System.Web.UI.WebControls.BoundField UserId;
-        protected global::System.Web.UI.WebControls.BoundField UserName;
-        protected global::System.Web.UI.WebControls.BoundField RoleId;
-        protected global::System.Web.UI.WebControls.BoundField FailedAccessCount;
-        protected global::System.Web.UI.WebControls.BoundField LockoutEnabled;
-        protected global::System.Web.UI.WebControls.BoundField Email;
-        protected global::System.Web.UI.WebControls.BoundField Password;
-        protected global::System.Web.UI.WebControls.BoundField UserStatus;
-
     }
 }
