@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="GradeBook.aspx.cs" Inherits="SchoolManagementSystem.WebForm2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="GradeBook.aspx.cs" Inherits="SchoolManagementSystem.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -11,7 +11,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="Term"></asp:Label>
     <br />
 &nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:DropDownList ID="DropDownList1" runat="server">
+    <asp:DropDownList ID="GradeDropDownList" runat="server">
         <asp:ListItem Value="0">Choose a Grade</asp:ListItem>
         <asp:ListItem Value="1">Grade 7</asp:ListItem>
         <asp:ListItem Value="2">Grade 8</asp:ListItem>
@@ -22,7 +22,7 @@
         <asp:ListItem Value="7">Grade 13</asp:ListItem>
     </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:DropDownList ID="DropDownList2" runat="server">
+    <asp:DropDownList ID="TermDropDownList" runat="server">
         <asp:ListItem Value="0">Choose a Term</asp:ListItem>
         <asp:ListItem Value="1">Term 1</asp:ListItem>
         <asp:ListItem Value="2">Term 2</asp:ListItem>
@@ -31,42 +31,83 @@
     </asp:DropDownList>
         <br />
 
-        <table> 
-            <tr>
-                <td> Subject</td>
-                <td><asp:TextBox ID="subject" runat="server"></asp:TextBox></td>
-            </tr>
-            <tr>
-                <td> Teacher</td>
-                <td><asp:TextBox ID="teacher" runat="server"></asp:TextBox></td>
-            </tr>
-                    <tr>
-                <td> Grade 1</td>
-                <td><asp:TextBox ID="grade1" runat="server"></asp:TextBox></td>
-            </tr>
-                        <tr>
-                <td> Grade 2</td>
-                <td><asp:TextBox ID="grade2" runat="server"></asp:TextBox></td>
-            </tr>
-                        <tr>
-                <td> Grade 3</td>
-                <td><asp:TextBox ID="grade3" runat="server"></asp:TextBox></td>
-            </tr>
-                        <tr>
-                <td> Final Grade</td>
-                <td><asp:TextBox ID="finalGrade" runat="server"></asp:TextBox></td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center">
-                    <asp:Button ID="Button1" runat="server" Text="Insert" />
-                    <asp:Button ID="Button2" runat="server" Text="Delete" />
-                    <asp:Button ID="Button3" runat="server" Text="Update" />
-                    <asp:Button ID="Button4" runat="server" Text="View" />
-                </td>
+            <asp:GridView ID="GradebookGrid" runat="server" AutoGenerateColumns="false" AllowPaging="true"
+      CssClass="table" OnRowEditing="GradebookGrid_RowEditing" OnRowUpdating="GradebookGrid_RowUpdating" OnRowCancelingEdit="GradebookGrid_RowCancelingEdit">
 
-            </tr>
-            
-        </table>
-        <asp:GridView ID="GridView1" runat="server"></asp:GridView>
-    </div>
+    <Columns>
+
+        <asp:TemplateField HeaderText="Student Id">  
+                    <ItemTemplate>  
+                        <asp:TextBox Enabled="false" ID="UserId" runat="server" TextMode="Number" Text='<%#Eval("StudentId") %>'></asp:TextBox>  
+                    </ItemTemplate>  
+                </asp:TemplateField>  
+
+        <asp:TemplateField HeaderText="Grade Level Name">  
+                    <ItemTemplate>  
+                        <asp:Label ID="lbl_GradeLevelName" runat="server" Text='<%#Eval("GradeLevelName") %>'></asp:Label>  
+                    </ItemTemplate>  
+                </asp:TemplateField> 
+
+                <asp:TemplateField HeaderText="Term">  
+                    <ItemTemplate>  
+                        <asp:Label ID="lbl_Term" runat="server" Text='<%#Eval("Term") %>'></asp:Label>  
+                    </ItemTemplate>  
+                </asp:TemplateField> 
+
+        <asp:TemplateField HeaderText="Year">  
+                    <ItemTemplate>  
+                        <asp:Label ID="lbl_Year" runat="server" Text='<%#Eval("Year") %>'></asp:Label>  
+                    </ItemTemplate>  
+                </asp:TemplateField> 
+
+        <asp:TemplateField HeaderText="Grade 1">  
+                    <ItemTemplate>  
+                        <asp:Label ID="lbl_Grade1" runat="server" Text='<%#Eval("Grade1") %>'></asp:Label>  
+                    </ItemTemplate>  
+                    <EditItemTemplate>  
+                        <asp:TextBox ID="txt_Grade1" runat="server" TextMode="Number" Text='<%#Eval("Grade1") %>'></asp:TextBox>  
+                    </EditItemTemplate>  
+                </asp:TemplateField> 
+
+        <asp:TemplateField HeaderText="Grade 2">  
+                    <ItemTemplate>  
+                        <asp:Label ID="lbl_Grade2" runat="server" Text='<%#Eval("Grade2") %>'></asp:Label>  
+                    </ItemTemplate>  
+                    <EditItemTemplate>  
+                        <asp:TextBox ID="txt_Grade2" runat="server" TextMode="Number" Text='<%#Eval("Grade2") %>'></asp:TextBox>  
+                    </EditItemTemplate>  
+                </asp:TemplateField>
+
+        <asp:TemplateField HeaderText="Grade 3">  
+                    <ItemTemplate>  
+                        <asp:Label ID="lbl_Grade3" runat="server" Text='<%#Eval("Grade3") %>'></asp:Label>  
+                    </ItemTemplate>  
+                    <EditItemTemplate>  
+                        <asp:TextBox ID="txt_Grade3" runat="server" TextMode="Number" Text='<%#Eval("Grade3") %>'></asp:TextBox>  
+                    </EditItemTemplate>  
+                </asp:TemplateField>
+
+        <asp:TemplateField HeaderText="Final Grade">  
+                    <ItemTemplate>  
+                        <asp:Label ID="lbl_FinalGrade" runat="server" Text='<%#Eval("FinalGrade") %>'></asp:Label>  
+                    </ItemTemplate>  
+                    <EditItemTemplate>  
+                        <asp:TextBox ID="txt_FinalGrade" runat="server" TextMode="Number" Text='<%#Eval("FinalGrade") %>'></asp:TextBox>  
+                    </EditItemTemplate>  
+                </asp:TemplateField>
+        
+        <asp:TemplateField HeaderText="Action">  
+                    <ItemTemplate>  
+                        <asp:Button ID="btn_Edit" runat="server" Text="Edit" CommandName="Edit" />  
+                    </ItemTemplate>  
+                    <EditItemTemplate>  
+                        <asp:Button ID="btn_Update" runat="server" Text="Update" CommandName="Update"/>  
+                        <asp:Button ID="btn_Cancel" runat="server" Text="Cancel" CommandName="Cancel"/>  
+                    </EditItemTemplate> 
+
+        </asp:TemplateField> 
+        
+    </Columns>
+</asp:GridView>
+
 </asp:Content>

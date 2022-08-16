@@ -129,24 +129,38 @@ body {
     /* Margin bottom by footer height */
     margin: 0;
     background-color: #e6f9ff;
-}    
-
-table, th {
-    border: 1px solid #ddd;
-    text-align: left;
 }
 
-table {
-    border-collapse: collapse;
-    margin: 40px 40px;
-    background-color:white;
-    border: 10px ;
 
+table {
+    margin: 0 0 40px 0;
+    width: 80%;
+    margin: 30px auto auto auto;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    border: 5px solid #2980b9;
 }
 
 th {
+    font-weight: 900;
+    color: #ffffff;
+    background: #2980b9;
     padding: 15px;
 }
+
+tr {
+    display: table-row;
+    background: #f6f6f6;
+    padding: 10px;
+    text-align: center;
+}
+
+tr:hover:not(:first-of-type){
+    background-color: rgba(0, 0, 0, 0.1);
+    display: table-row;
+    text-align: center;
+
+}
+
 
 /*-------------------------------------------*/
 nav {
