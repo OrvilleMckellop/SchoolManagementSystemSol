@@ -13,7 +13,7 @@ namespace SchoolManagementSystem
         {
             try
             {
-                if (Session["RoleId"].Equals("1"))
+                if (Session["RoleId"].Equals("1")) 
                 {
                     Home_linkBtn.Visible = true;
                     Student_linkBtn.Visible = true;
