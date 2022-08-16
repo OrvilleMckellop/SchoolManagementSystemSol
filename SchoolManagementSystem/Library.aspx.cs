@@ -22,7 +22,7 @@ namespace SchoolManagementSystem
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("View into libr values('"+TextBox1+"')")
+            SqlCommand cmd = new SqlCommand("View into libr values('" + TextBox1 + "')");
        
 
         }

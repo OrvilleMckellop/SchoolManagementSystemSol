@@ -7,10 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+
 namespace SchoolManagementSystem
 {
-
-
     public partial class WebForm2
     {
 

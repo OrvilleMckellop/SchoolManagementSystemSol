@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data;
-using System.Data.SqlClient;
 
 namespace SchoolManagementSystem
 {
@@ -14,7 +14,7 @@ namespace SchoolManagementSystem
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-BT6LV2N;Initial Catalog=SchoolManagementSystemDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(con.State==ConnectionState.Open)
+            if (con.State == ConnectionState.Open)
             {
                 con.Close();
             }
@@ -39,7 +39,7 @@ namespace SchoolManagementSystem
 
             disp_data();
         }
-        
+
         public void disp_data()
         {
             SqlCommand cmd = con.CreateCommand();
