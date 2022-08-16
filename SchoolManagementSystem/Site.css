@@ -252,3 +252,22 @@ nav a:hover {
     padding: 10px;
    margin:auto auto auto auto ;
 }
+
+<<<<<<< HEAD
+/*For assignments*/
+.row {
+    display: block;
+    height: 30px;
+}
+
+.label {
+    float: left;
+    width: 100px;
+}
+
+.input {
+    float: left;
+    width: 100px;
+}
+
+
