@@ -252,3 +252,24 @@ nav a:hover {
     padding: 10px;
    margin:auto auto auto auto ;
 }
+
+<<<<<<< HEAD
+/*For assignments*/
+.row {
+    display: block;
+    height: 30px;
+}
+
+.label {
+    float: left;
+    width: 100px;
+}
+
+.input {
+    float: left;
+    width: 100px;
+}
+
+/*FOR DATE PICKER*/
+=======
+>>>>>>> 289f6b6860a7fca149ec373a071e7f0d10c219df
