@@ -129,14 +129,7 @@ body {
     /* Margin bottom by footer height */
     margin: 0;
     background-color: #e6f9ff;
-}    position: absolute;
-    bottom: 0;
-    width: 100%;
-    white-space: nowrap;
-    line-height: 60px; /* Vertically center the text there */
-    text-align: center;
-}
-
+}    
 
 table, th {
     border: 1px solid #ddd;
@@ -145,7 +138,10 @@ table, th {
 
 table {
     border-collapse: collapse;
-    width: 100%
+    margin: 40px 40px;
+    background-color:white;
+    border: 10px ;
+
 }
 
 th {
@@ -257,6 +253,7 @@ nav a:hover {
    margin:auto auto auto auto ;
 }
 
+<<<<<<< HEAD
 /*For assignments*/
 .row {
     display: block;
@@ -274,3 +271,5 @@ nav a:hover {
 }
 
 /*FOR DATE PICKER*/
+=======
+>>>>>>> 289f6b6860a7fca149ec373a071e7f0d10c219df
