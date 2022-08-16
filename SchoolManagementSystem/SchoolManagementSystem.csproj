@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="AdministratorDashboard.aspx" />
     <Content Include="Assignments.aspx" />
+    <Content Include="AssignmentSubmission.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="Library.aspx" />
     <Content Include="Login.aspx" />
@@ -93,6 +94,13 @@
     </Compile>
     <Compile Include="Assignments.aspx.designer.cs">
       <DependentUpon>Assignments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssignmentSubmission.aspx.cs">
+      <DependentUpon>AssignmentSubmission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignmentSubmission.aspx.designer.cs">
+      <DependentUpon>AssignmentSubmission.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
