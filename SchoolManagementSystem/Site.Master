@@ -1,15 +1,10 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SchoolManagementSystem.Site" %>
 
 <!DOCTYPE html>
-
-
-<html>
+    <html>
 <head runat="server">
     <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-        
-    </asp:ContentPlaceHolder>
-        <link rel="stylesheet" href="Site.css"/>
+    <link rel="stylesheet" href="Site.css"/>
     
     
 </head>
@@ -24,17 +19,63 @@
         <a href="AdministratorDashboard.aspx" runat="server" ID="Admin_linkBtn">Administrator</a>
     <a href="Login.aspx" class="splitright" runat="server" ID="Login_linkBtn">Login/Register</a>
     <asp:Button ID="Button1" runat="server" Text="Logout" CssClass="splitright" OnClick="Button1_Click" Height="49px" Width="74px" />
-    
+    </nav>
+		
+
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+				
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link rel="stylesheet" href="Site.css"/>
+
+    </asp:ContentPlaceHolder>
+
 
         
-
-    </nav>
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-    </form>
-    
+</form>
 </body>
+<footer>
 
+			<div>
+
+				<h3>School Management System</h3>
+
+				<p>School Management System @ <script type="text/javascript">document.write(new Date().getFullYear());</script>.</p>
+			</div>
+
+			<div>
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1.555.555.5555</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">support@company.com</a></p>
+				</div>
+
+			</div>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
 </html>

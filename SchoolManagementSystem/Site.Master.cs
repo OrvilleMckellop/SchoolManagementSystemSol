@@ -11,6 +11,12 @@ namespace SchoolManagementSystem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Home_linkBtn.Visible = true;
+            Student_linkBtn.Visible = false;
+            Teacher_linkBtn.Visible = false;
+            Admin_linkBtn.Visible = false;
+            Login_linkBtn.Visible = true;
+            Button1.Visible = false;
             try
             {
                 if (Session["RoleId"].Equals("1"))

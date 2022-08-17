@@ -9,24 +9,28 @@
 
 
 .sidebar {
-    background-color: #4f96de;
+    background: rgb(0,101,255);
+    background: radial-gradient(circle, rgba(0,101,255,1) 0%, rgba(0,26,140,1) 55%);
     position: fixed;
     font-size: 18px;
     padding: 20px;
     left: 0;
     height: 100%;
     width: 15%;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 
 
 
 .sidebar-item {
     display: block;
-    background-color: white;
+    background-color: gold;
+    color: #2f1c00;
     padding: 10px;
     border-style: solid;
     border-width: medium;
-    border-color: aqua;
+    border-color: darkgoldenrod;
     margin-bottom: 10px;
     border-radius: 20px;
     text-align: center;
@@ -35,11 +39,11 @@
     .sidebar-item:hover {
         display: block;
         color: white;
-        background-color: aqua;
+        background-color: darkgoldenrod;
         padding: 10px;
         border-style: solid;
         border-width: medium;
-        border-color: white;
+        border-color: gold;
         width: stretch;
         margin-bottom: 10px;
     }
@@ -129,12 +133,13 @@ body {
     /* Margin bottom by footer height */
     margin: 0;
     background-color: #e6f9ff;
+    color: black;
 }
 
 
 table {
     margin: 0 0 40px 0;
-    width: 80%;
+    width: 90%;
     margin: 30px auto auto auto;
     box-shadow: 0 10px 10px rgba(0,0,0,0.2);
     border: 5px solid #2980b9;
@@ -164,10 +169,12 @@ tr:hover:not(:first-of-type){
 
 /*-------------------------------------------*/
 nav {
+    position: sticky;
+    top: 0;
     overflow: hidden;
     background: rgb(255,254,0);
     background: linear-gradient(180deg, rgba(255,254,0,1) 0%, rgba(218,159,0,1) 100%);
-    color: black;
+    color: #2f1c00;
 }
 
 nav a {
@@ -201,8 +208,8 @@ nav a:hover {
 
 /*--------------------------------------*/
 .login-form {
-    color: black;
-    background-color: ghostwhite;
+    background: rgb(0,101,255);
+    background: radial-gradient(circle, rgba(0,101,255,1) 0%, rgba(0,26,140,1) 55%);
     width: 40%;
     height: 70%;
     margin: 25px auto auto auto;
@@ -293,12 +300,10 @@ nav a:hover {
     padding: 10px;
     margin: 0;
 }
-.section-A:hover{
-    color: gold;
-}
 
 .section-B {
     background: rgb(255,254,0);
+    color:#2f1c00;
     background: radial-gradient(circle, rgba(255,254,0,1) 0%, rgba(255,199,0,1) 48%);
     text-align: center;
     padding: 10px;
@@ -309,4 +314,21 @@ image{
     border: 10px solid white;
     height: 500px;
     width: 500px;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgb(255,214,0);
+    background: radial-gradient(circle, rgba(255,214,0,1) 0%, rgba(185,148,0,1) 84%);
+    color: #2f1c00;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    position: page;
+}
+
+form{
+    margin-bottom: 0;
 }
