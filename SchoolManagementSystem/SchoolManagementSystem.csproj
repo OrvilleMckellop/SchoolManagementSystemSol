@@ -70,6 +70,8 @@
     <Content Include="AdministratorDashboard.aspx" />
     <Content Include="Assignments.aspx" />
     <Content Include="AssignmentSubmission.aspx" />
+    <Content Include="Attendance.aspx" />
+    <Content Include="GradeBook.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="Library.aspx" />
     <Content Include="Login.aspx" />
@@ -102,6 +104,20 @@
     </Compile>
     <Compile Include="AssignmentSubmission.aspx.designer.cs">
       <DependentUpon>AssignmentSubmission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.aspx.cs">
+      <DependentUpon>Attendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance.aspx.designer.cs">
+      <DependentUpon>Attendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GradeBook.aspx.cs">
+      <DependentUpon>GradeBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GradeBook.aspx.designer.cs">
+      <DependentUpon>GradeBook.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

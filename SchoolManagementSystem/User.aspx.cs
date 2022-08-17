@@ -1,64 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Text;
-using System.Configuration;
-using System.Data.SqlClient;
-using System.Data;
 
 namespace SchoolManagementSystem
 {
-    public partial class Users : System.Web.UI.Page
+    public partial class User : System.Web.UI.Page
     {
         //connection to db
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
-
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!this.IsPostBack)
+            if (!IsPostBack)
             {
-                this.ShowGrid();
+                ShowGrid();
             }
-
-            /*try
-            {
-                SqlConnection con = new SqlConnection(strcon);
-                if (con.State == ConnectionState.Closed)
-                {
-                    con.Open();
-                }
-                SqlCommand cmd = new SqlCommand("SELECT [UserId] FROM [User]", con);
-                SqlDataReader dr = cmd.ExecuteReader();
-
-                if (dr.HasRows)
-                {
-                    UserId = (BoundField)dr.GetValue(0);
-                    UserName = (BoundField)dr.GetValue(1);
-                    RoleId = (BoundField)dr.GetValue(2);
-                    FailedAccessCount = (BoundField)dr.GetValue(3);
-                    LockoutEnabled = (BoundField)dr.GetValue(4);
-                    Email = (BoundField)dr.GetValue(5);
-                    Password = (BoundField)dr.GetValue(6);
-                    UserStatus = (BoundField)dr.GetValue(7);
-                }
-                else
-                {
-                    Response.Write("<script>alert('No Valid Users ');</script>");
-
-                }
-
-            }
-            catch (Exception ex)
-            {
-                Response.Write("<script>alert(' "+ ex +" ');</script>");
-
-                //throw;
-            }*/
         }
 
+        //ShowGrid method for Displaying Data in Gridview  
         private void ShowGrid()
         {
             SqlConnection con = new SqlConnection(strcon);
@@ -126,12 +90,5 @@ namespace SchoolManagementSystem
             UserGrid.EditIndex = -1;
             ShowGrid();
         }
-        public string userid;
-        private void edit(object sender, EventArgs e)
-        {
-            Response.Redirect("EditUser.aspx");
-            //userid = UserId.ToString();
-        }
     }
-
 }

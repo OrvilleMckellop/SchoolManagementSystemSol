@@ -1,14 +1,14 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" Codefile="Users.aspx.cs" Inherits="SchoolManagementSystem.Users" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="User.aspx.cs" Inherits="SchoolManagementSystem.User" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <asp:GridView ID="UserGrid" runat="server" AutoGenerateColumns="false" AllowPaging="true"
-      CssClass="table" OnRowEditing="UserGrid_RowEditing" OnRowUpdating="UserGrid_RowUpdating" OnRowCancelingEdit="UserGrid_RowCancelingEdit">
-
-    <Columns>
-
-        <asp:TemplateField HeaderText="User Id">  
+    <div>      
+        <asp:GridView ID="UserGrid" runat="server" AutoGenerateColumns="False" CellPadding="6" OnRowCancelingEdit="UserGrid_RowCancelingEdit"   
+  
+OnRowEditing="UserGrid_RowEditing" OnRowUpdating="UserGrid_RowUpdating">  
+            <Columns>  
+                <asp:TemplateField HeaderText="User Id">  
                     <ItemTemplate>  
                         <asp:TextBox Enabled="false" ID="UserId" runat="server" TextMode="Number" Text='<%#Eval("UserId") %>'></asp:TextBox>  
                     </ItemTemplate>  
@@ -88,9 +88,10 @@
                         <asp:Button ID="btn_Cancel" runat="server" Text="Cancel" CommandName="Cancel"/>  
                     </EditItemTemplate> 
 
-        </asp:TemplateField> 
-        
-    </Columns>
-</asp:GridView>
+        </asp:TemplateField>
+            </Columns>  
+        </asp:GridView>  
+      
+    </div>  
 
 </asp:Content>

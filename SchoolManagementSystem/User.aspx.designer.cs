@@ -11,18 +11,16 @@ namespace SchoolManagementSystem
 {
 
 
-    public partial class Users
+    public partial class User
     {
 
         /// <summary>
-        /// ltrStudents control.
+        /// UserGrid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal DynamicTable;
-
         protected global::System.Web.UI.WebControls.GridView UserGrid;
         protected global::System.Web.UI.WebControls.BoundField UserId;
         protected global::System.Web.UI.WebControls.BoundField UserName;
@@ -32,6 +30,5 @@ namespace SchoolManagementSystem
         protected global::System.Web.UI.WebControls.BoundField Email;
         protected global::System.Web.UI.WebControls.BoundField Password;
         protected global::System.Web.UI.WebControls.BoundField UserStatus;
-
     }
 }
