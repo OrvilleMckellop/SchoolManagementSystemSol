@@ -3,7 +3,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    
     <div>      
+        <a href="AddUser.aspx" class="btn-primary">Create User</a>
         <asp:GridView ID="UserGrid" runat="server" AutoGenerateColumns="False" CellPadding="6" OnRowCancelingEdit="UserGrid_RowCancelingEdit"   
   
 OnRowEditing="UserGrid_RowEditing" OnRowUpdating="UserGrid_RowUpdating">  
@@ -88,9 +90,11 @@ OnRowEditing="UserGrid_RowEditing" OnRowUpdating="UserGrid_RowUpdating">
                         <asp:Button ID="btn_Cancel" runat="server" Text="Cancel" CommandName="Cancel"/>  
                     </EditItemTemplate> 
 
+            
         </asp:TemplateField>
             </Columns>  
         </asp:GridView>  
+        
       
     </div>  
 

@@ -24,7 +24,47 @@
 income families. </p>
         <p style="color: white; 20px;">Students are mostly from nearby communities in St. Catherine but some
 come from the adjoining parishes such as St. Mary and St Andrew.</p>
+
         <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/20220429_130743.jpg" Height="500px" Width="1000px" style="margin:0 auto; display:block;" />
          </section>
+    <footer>
 
+			<div>
+
+				<h3>School Management System</h3>
+
+				<p>School Management System @ <script type="text/javascript">document.write(new Date().getFullYear());</script>.</p>
+			</div>
+
+			<div>
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1.555.555.5555</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">support@company.com</a></p>
+				</div>
+
+			</div>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
 </asp:Content>

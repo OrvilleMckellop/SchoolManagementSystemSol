@@ -17,7 +17,8 @@
         <a href="TeacherDashboard.aspx" runat="server" ID="Teacher_linkBtn">Teacher</a>
         <a href="StudentDashboard.aspx" runat="server" ID="Student_linkBtn">Student</a>
         <a href="AdministratorDashboard.aspx" runat="server" ID="Admin_linkBtn">Administrator</a>
-    <a href="Login.aspx" class="splitright" runat="server" ID="Login_linkBtn">Login/Register</a>
+    <a href="Login.aspx" class="splitright" runat="server" ID="Login_linkBtn">Login</a>
+		<asp:Label runat="server" ID="usernamelbl" Text='<%#Eval("username") %>' CssClass="profile-btn"></asp:Label>
     <asp:Button ID="Button1" runat="server" Text="Logout" CssClass="splitright" OnClick="Button1_Click" Height="49px" Width="74px" />
     </nav>
 		
@@ -38,44 +39,5 @@
         
 </form>
 </body>
-<footer>
 
-			<div>
-
-				<h3>School Management System</h3>
-
-				<p>School Management System @ <script type="text/javascript">document.write(new Date().getFullYear());</script>.</p>
-			</div>
-
-			<div>
-
-				<div>
-					<i class="fa fa-map-marker"></i>
-					<p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
-				</div>
-
-				<div>
-					<i class="fa fa-phone"></i>
-					<p>+1.555.555.5555</p>
-				</div>
-
-				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">support@company.com</a></p>
-				</div>
-
-			</div>
-
-				<div class="footer-icons">
-
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
-
-				</div>
-
-			</div>
-
-		</footer>
 </html>

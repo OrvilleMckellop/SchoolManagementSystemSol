@@ -17,6 +17,7 @@ namespace SchoolManagementSystem
             Admin_linkBtn.Visible = false;
             Login_linkBtn.Visible = true;
             Button1.Visible = false;
+            usernamelbl.Visible = false;
             try
             {
                 if (Session["RoleId"].Equals("1"))
@@ -27,7 +28,8 @@ namespace SchoolManagementSystem
                     Admin_linkBtn.Visible = false;
                     Login_linkBtn.Visible = false;
                     Button1.Visible = true;
-                    //usernamelbl.Text = "Hello, " + Session["username"].ToString() + "!";
+                    usernamelbl.Visible = true;
+                    usernamelbl.Text = "Hello, " + Session["username"].ToString() + "!";
 
 
 
@@ -40,7 +42,8 @@ namespace SchoolManagementSystem
                     Admin_linkBtn.Visible = false;
                     Login_linkBtn.Visible = false;
                     Button1.Visible = true;
-                   // usernamelbl.Text = "Hello, " + Session["username"].ToString() + "!";
+                    usernamelbl.Visible = true;
+                    usernamelbl.Text = "Hello, " + Session["username"].ToString() + "!";
 
 
                 }
@@ -52,7 +55,8 @@ namespace SchoolManagementSystem
                     Admin_linkBtn.Visible = true;
                     Login_linkBtn.Visible = false;
                     Button1.Visible = true;
-                    //usernamelbl.Text = "Hello, " + Session["username"].ToString() + "!";
+                    usernamelbl.Visible = true;
+                    usernamelbl.Text = "Hello, " + Session["username"].ToString() + "!";
 
 
 
@@ -65,7 +69,7 @@ namespace SchoolManagementSystem
                     Admin_linkBtn.Visible = false;
                     Login_linkBtn.Visible = false;
                     Button1.Visible = true;
-                    //usernamelbl.Text = "Hello, " + Session["username"].ToString() + "!";
+                    usernamelbl.Visible = false;
 
 
                 }
@@ -77,6 +81,7 @@ namespace SchoolManagementSystem
                     Admin_linkBtn.Visible = false;
                     Login_linkBtn.Visible = true;
                     Button1.Visible = false;
+                    usernamelbl.Visible = false;
                 }
             }
             catch (Exception ex)

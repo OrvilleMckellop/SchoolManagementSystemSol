@@ -4,7 +4,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="login-form">
-        <form>
           <div class="login-header">
             <h1>Login</h1>
             <p>Please enter your credentials to login.</p>
@@ -23,8 +22,7 @@
             <div class="login-border">
                 <p class="message">Not registered? <a href="Register.aspx">Register Here</a></p>
             </div>
-          
-        </form>
+
 </div>
 
 </asp:Content>

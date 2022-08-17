@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddUser.aspx" />
     <Content Include="AdministratorDashboard.aspx" />
     <Content Include="Assignments.aspx" />
     <Content Include="AssignmentSubmission.aspx" />
@@ -90,6 +91,13 @@
     <Content Include="Homepage.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdministratorDashboard.aspx.cs">
       <DependentUpon>AdministratorDashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

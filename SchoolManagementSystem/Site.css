@@ -192,6 +192,7 @@ nav a:hover {
   color: black;
 }
 
+
 /* Create a right-aligned (split) link inside the navigation bar */
 .splitright {
   float: right;
@@ -208,8 +209,7 @@ nav a:hover {
 
 /*--------------------------------------*/
 .login-form {
-    background: rgb(0,101,255);
-    background: radial-gradient(circle, rgba(0,101,255,1) 0%, rgba(0,26,140,1) 55%);
+    background-color: ghostwhite;
     width: 40%;
     height: 70%;
     margin: 25px auto auto auto;
@@ -269,10 +269,14 @@ nav a:hover {
     margin-bottom: 0;
 }
 
-.profile-btn{
-    border-radius: 10%;
-    padding: 10px;
-   margin:auto auto auto auto ;
+.profile-btn {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    ;
 }
 
 <<<<<<< HEAD
