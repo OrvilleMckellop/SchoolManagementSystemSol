@@ -150,9 +150,10 @@ th {
 
 /*-------------------------------------------*/
 nav {
-  overflow: hidden;
-  background-color: #e5e5e5;
-  color: black;
+    overflow: hidden;
+    background: rgb(255,254,0);
+    background: linear-gradient(180deg, rgba(255,254,0,1) 0%, rgba(218,159,0,1) 100%);
+    color: black;
 }
 
 nav a {
@@ -162,19 +163,19 @@ nav a {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  width: 30px;
+  
 }
 
 nav a:hover {
-  background-color: #ddd;
+  background-color: darkgoldenrod;
   color: black;
 }
 
 /* Create a right-aligned (split) link inside the navigation bar */
 .splitright {
   float: right;
-  background-color: aqua;
-  color: black;
+  background-color: dodgerblue;
+  color: ghostwhite;
     margin-left: 15px;
 }
 
@@ -270,4 +271,28 @@ nav a:hover {
     width: 100px;
 }
 
+/*---------------------------------------------*/
+.section-A {
+    background: rgb(0,101,255);
+    background: radial-gradient(circle, rgba(0,101,255,1) 0%, rgba(0,26,140,1) 55%);
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+.section-A:hover{
+    color: gold;
+}
 
+.section-B {
+    background: rgb(255,254,0);
+    background: radial-gradient(circle, rgba(255,254,0,1) 0%, rgba(255,199,0,1) 48%);
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+image{
+    border: 10px solid white;
+    height: 500px;
+    width: 500px;
+}

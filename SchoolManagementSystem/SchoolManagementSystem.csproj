@@ -70,6 +70,11 @@
     <Content Include="AdministratorDashboard.aspx" />
     <Content Include="Assignments.aspx" />
     <Content Include="AssignmentSubmission.aspx" />
+    <Content Include="Images\20220426_101907.jpg" />
+    <Content Include="Images\20220429_130743.jpg" />
+    <Content Include="Images\20220429_131222.jpg" />
+    <Content Include="Images\20220429_131402.jpg" />
+    <Content Include="Images\Glengoffe-High-School.jpg" />
     <Content Include="Index.aspx" />
     <Content Include="Library.aspx" />
     <Content Include="Login.aspx" />
@@ -80,6 +85,7 @@
     <Content Include="TeacherDashboard.aspx" />
     <Content Include="User.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Homepage.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdministratorDashboard.aspx.cs">
@@ -166,6 +172,13 @@
     </Compile>
     <Compile Include="User.aspx.designer.cs">
       <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.aspx.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage.aspx.designer.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
