@@ -31,7 +31,7 @@ come from the adjoining parishes such as St. Mary and St Andrew.</p>
 
 			<div>
 
-				<h3>School Management System</h3>
+				<h3>Glengoffe High School</h3>
 
 				<p>School Management System @ <script type="text/javascript">document.write(new Date().getFullYear());</script>.</p>
 			</div>
@@ -40,20 +40,15 @@ come from the adjoining parishes such as St. Mary and St Andrew.</p>
 
 				<div>
 					<i class="fa fa-map-marker"></i>
-					<p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+					<p><span>Glengoffe P.O.</span>  St. Catherine, Jamaica, W.I.</p>
 				</div>
 
 				<div>
 					<i class="fa fa-phone"></i>
-					<p>+1.555.555.5555</p>
+					<p>	(868) 708-1288</p>
 				</div>
 
-				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">support@company.com</a></p>
-				</div>
-
-			</div>
+				
 
 				<div class="footer-icons">
 
