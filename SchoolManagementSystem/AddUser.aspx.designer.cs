@@ -68,6 +68,9 @@ namespace SchoolManagementSystem
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Password;
 
+        protected global::System.Web.UI.WebControls.TextBox StudentId;
+        protected global::System.Web.UI.WebControls.TextBox FormClassId;
+
         /// <summary>
         /// Gender control.
         /// </summary>
@@ -85,5 +88,8 @@ namespace SchoolManagementSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox UserStatus;
+
+        protected global::System.Web.UI.WebControls.Label lbl_GradeLevel;
+        protected global::System.Web.UI.WebControls.DropDownList GradeLevel;
     }
 }

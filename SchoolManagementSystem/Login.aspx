@@ -3,6 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+
     <div class="login-form">
           <div class="login-header">
             <h1>Login</h1>
@@ -19,9 +20,10 @@
             <div class="login-border">
                 <asp:Button class="login-submit" ID="Login_Button" runat="server" Text="Login" OnClick="Login_Button_Clik" UseSubmitBehavior="true"/>      
             </div>
-            <div class="login-border">
+            <!--
+                <div class="login-border">
                 <p class="message">Not registered? <a href="Register.aspx">Register Here</a></p>
-            </div>
+            </div>-->
 
 </div>
 

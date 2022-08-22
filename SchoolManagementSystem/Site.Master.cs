@@ -18,6 +18,18 @@ namespace SchoolManagementSystem
             Login_linkBtn.Visible = true;
             Button1.Visible = false;
             usernamelbl.Visible = false;
+
+            /*UserId.Text = " ";
+            UserName.Text = " ";
+            FName.Text = " ";
+            lName.Text = " "; ;
+            gender.Text = " ";
+            email.Text = " ";
+            telphone1.Text = " ";
+            telphone2.Text = " ";*/
+
+            //role.Text = Session["RoleId"].Equals("0").ToString();
+
             try
             {
                 if (Session["RoleId"].Equals("1"))
@@ -30,7 +42,6 @@ namespace SchoolManagementSystem
                     Button1.Visible = true;
                     usernamelbl.Visible = true;
                     usernamelbl.Text = "Hello, " + Session["username"].ToString() + "!";
-
 
 
                 }

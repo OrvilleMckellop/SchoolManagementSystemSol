@@ -58,5 +58,7 @@ namespace SchoolManagementSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GradebookGrid;
+
+        protected global::System.Web.UI.WebControls.Button btn_Edit;
     }
 }

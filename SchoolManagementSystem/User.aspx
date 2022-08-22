@@ -5,7 +5,7 @@
 
     
     <div>      
-        <a href="AddUser.aspx" class="btn-primary">Create User</a>
+        <a href="AddUser.aspx" class="create-btn">Create User</a>
         <asp:GridView ID="UserGrid" runat="server" AutoGenerateColumns="False" CellPadding="6" OnRowCancelingEdit="UserGrid_RowCancelingEdit"   
   
 OnRowEditing="UserGrid_RowEditing" OnRowUpdating="UserGrid_RowUpdating">  

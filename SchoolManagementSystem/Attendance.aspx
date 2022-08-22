@@ -1,23 +1,27 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" Codefile="Attendance.aspx.cs" Inherits="SchoolManagementSystem.Attendance" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
+    <asp:Calendar ID="calendarId" runat="server" SelectionMode="Day" ShowGridLines="true" DayNameFormat="FirstLetter"  OnSelectionChanged="calendarId_SelectionChanged"></asp:Calendar>
+    <asp:Label runat="server" ID="calenderlbl"></asp:Label>
+
             <asp:GridView ID="AttendanceGrid" runat="server" AutoGenerateColumns="False" CellPadding="6" OnRowCancelingEdit="AttendanceGrid_RowCancelingEdit" 
             OnRowEditing="AttendanceGrid_RowEditing" OnRowUpdating="AttendanceGrid_RowUpdating">
         <Columns>
-            <asp:TemplateField HeaderText="Form Class">
-                <ItemTemplate>
-                    <asp:Label ID="lbl_FormClass" runat="server" Text='<%#Eval("FormClass") %>'></asp:Label>  
-                </ItemTemplate>
-            </asp:TemplateField>
             <asp:TemplateField HeaderText="Student Id">
                 <ItemTemplate>
                     <asp:Label ID="lbl_StudentId" runat="server" Text='<%#Eval("StudentId") %>'></asp:Label>  
                 </ItemTemplate>
             </asp:TemplateField>
 
-            <asp:TemplateField HeaderText="StudentName">
+            <asp:TemplateField HeaderText="Last Name">
                 <ItemTemplate>
-                    <asp:Label ID="lbl_UserName" runat="server" Text='<%#Eval("FullName") %>'></asp:Label>  
+                    <asp:Label ID="lbl_LastName" runat="server" Text='<%#Eval("LastName") %>'></asp:Label>  
+                </ItemTemplate>
+            </asp:TemplateField>
+
+            <asp:TemplateField HeaderText="First Name">
+                <ItemTemplate>
+                    <asp:Label ID="lbl_FirstName" runat="server" Text='<%#Eval("FirstName") %>'></asp:Label>  
                 </ItemTemplate>
             </asp:TemplateField>
 

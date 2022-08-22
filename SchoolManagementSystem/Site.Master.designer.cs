@@ -87,5 +87,15 @@ namespace SchoolManagementSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+
+        protected global::System.Web.UI.WebControls.Label UserId;
+        protected global::System.Web.UI.WebControls.Label UserName;
+        protected global::System.Web.UI.WebControls.Label FName;
+        protected global::System.Web.UI.WebControls.Label lName;
+        protected global::System.Web.UI.WebControls.Label gender;
+        protected global::System.Web.UI.WebControls.Label role;
+        protected global::System.Web.UI.WebControls.Label email;
+        protected global::System.Web.UI.WebControls.Label telphone1;
+        protected global::System.Web.UI.WebControls.Label telphone2;
     }
 }

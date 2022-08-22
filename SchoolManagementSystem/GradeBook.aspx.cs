@@ -32,7 +32,7 @@ namespace SchoolManagementSystem
                 {
                     con.Open();
                 }
-                SqlCommand cmd = new SqlCommand("SELECT [Student].[StudentId], [GradeBook].[Term], [GradeBook].[Year], [GradeBook].[Grade1], [GradeBook].[Grade2], [GradeBook].[Grade3], [GradeBook].[FinalGrade], [GradeLevel].[GradeLevelName] FROM [GradeBook] JOIN [Student] ON [Student].[StudentId] = [GradeBook].[StudentId] JOIN [GradeLevel] ON [GradeLevel].[GradeLevelId] = [GradeBook].[GradeLevelId];");
+                SqlCommand cmd = new SqlCommand("SELECT [Student].[StudentId], [GradeBook].[Term], [GradeBook].[Year], [GradeBook].[Grade1], [GradeBook].[Grade2], [GradeBook].[Grade3], [GradeBook].[FinalGrade], [GradeLevel].[GradeLevelName] FROM [GradeBook] JOIN [Student] ON [Student].[StudentId] = [GradeBook].[StudentId] JOIN [GradeLevel] ON [GradeLevel].[GradeLevelId] = [GradeBook].[GradeLevelId] WHERE Userid="+Session["UserId"].ToString()+";");
 
                 using (SqlDataAdapter sda = new SqlDataAdapter())
                 {
@@ -92,6 +92,7 @@ namespace SchoolManagementSystem
             GradebookGrid.EditIndex = -1;
             ShowGrid();
         }
+        
 
 
     }

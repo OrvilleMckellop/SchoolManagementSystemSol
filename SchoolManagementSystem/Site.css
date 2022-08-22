@@ -132,7 +132,10 @@ html {
 body {
     /* Margin bottom by footer height */
     margin: 0;
-    background-color: #e6f9ff;
+    background: #dfdfdf;
+    background: -webkit-linear-gradient(0deg, #dfdfdf 0%, #ffffff 100%);
+    background: linear-gradient(0deg, #dfdfdf 0%, #ffffff 100%);
+    backdrop-filter: blur(10px);
     color: black;
 }
 
@@ -166,6 +169,22 @@ tr:hover:not(:first-of-type){
 
 }
 
+.table-row{
+    display:table-row;
+    padding:15px;
+    color: black;
+}
+
+    .table-row:hover {
+        display: table-row;
+        padding: 15px;
+        color: black;
+    }
+
+.table-border{
+    border: 10px solid blue;
+}
+
 
 /*-------------------------------------------*/
 nav {
@@ -175,6 +194,9 @@ nav {
     background: rgb(255,254,0);
     background: linear-gradient(180deg, rgba(255,254,0,1) 0%, rgba(218,159,0,1) 100%);
     color: #2f1c00;
+    -webkit-box-shadow: 3px 3px 10px 3px #515154;
+    -moz-box-shadow: 3px 3px 10px 3px #515154;
+    box-shadow: 3px 3px 10px 3px #515154;
 }
 
 nav a {
@@ -206,15 +228,45 @@ nav a:hover {
   background-color: #1b6ec2;
   color: white;
   }
+/*---------------Bio-Data--------------------*/
+.studeninfo {
+    background: rgba(255,208,0,0.65);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,208,0,0.325);
+}
+
+.bio-input{
+    background-color: white;
+}
 
 /*--------------------------------------*/
+
+.login-background {
+    background: #dfdfdf;
+    background: -webkit-linear-gradient(0deg, #dfdfdf 0%, #ffffff 100%);
+    background: linear-gradient(0deg, #dfdfdf 0%, #ffffff 100%);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    height: 100%;
+    width: 100%;
+}
+
 .login-form {
-    background-color: ghostwhite;
+    color:white;
+    padding: 20px;
+    background: rgba(0,0,0,0.35);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0,0,0,0.175);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    -webkit-box-shadow: 3px 3px 10px 3px #ddd;
+    -moz-box-shadow: 3px 3px 10px 3px #ddd;
+    box-shadow: 3px 3px 10px 3px #ddd;
+    margin: 50px auto auto auto;
+    height: 65%;
     width: 40%;
-    height: 70%;
-    margin: 25px auto auto auto;
-    padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .login-header{
@@ -230,22 +282,14 @@ nav a:hover {
     margin: 0.875rem;
 }
 .login-input {
+    outline: none;
     background-color: white;
-    border-radius: 1rem;
-    border-width: medium;
-    width: 70%;
-    padding: 16px;
-    padding: 1rem;
-}
-
-.login-input:hover {
-    background-color: white;
-    border-width: medium;
-    border-radius: 1rem;
-    border-color: #4f96de;
-    width: 70%;
-    padding: 16px;
-    padding: 1rem;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 80%;
+    box-sizing: border-box;
+    color: #2C3E50;;
 }
 
 .login-submit {
@@ -254,7 +298,7 @@ nav a:hover {
     width: 250px;
     border-radius: 0.25rem;
     padding: 16px;
-    padding: 1rem;
+    border: none;
 }
 .login-submit:hover {
     background-color: #4f96de;
@@ -262,11 +306,9 @@ nav a:hover {
     width: 250px;
     border-radius: 0.25rem;
     padding: 16px;
-    padding: 1rem;
 }
 .login-label {
-    margin-right: auto;
-    margin-bottom: 0;
+    padding-right: 10px;
 }
 
 .profile-btn {
@@ -276,8 +318,10 @@ nav a:hover {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    ;
+    
 }
+
+
 
 <<<<<<< HEAD
 /*For assignments*/
@@ -336,3 +380,12 @@ footer {
 form{
     margin-bottom: 0;
 }
+
+.create-btn{
+    background-color: dodgerblue;
+    color: ghostwhite;
+    padding: 25px;
+    
+}
+
+

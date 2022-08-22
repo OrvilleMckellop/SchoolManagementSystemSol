@@ -32,6 +32,7 @@ namespace SchoolManagementSystem
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Password;
 
+
         /// <summary>
         /// Register_Button control.
         /// </summary>

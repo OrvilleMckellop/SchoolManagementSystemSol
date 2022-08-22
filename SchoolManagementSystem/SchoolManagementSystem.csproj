@@ -71,6 +71,7 @@
     <Content Include="AdministratorDashboard.aspx" />
     <Content Include="Assignments.aspx" />
     <Content Include="AssignmentSubmission.aspx" />
+    <Content Include="BioData.aspx" />
     <Content Include="Images\20220426_101907.jpg" />
     <Content Include="Images\20220429_130743.jpg" />
     <Content Include="Images\20220429_131222.jpg" />
@@ -125,6 +126,13 @@
     </Compile>
     <Compile Include="Attendance.aspx.designer.cs">
       <DependentUpon>Attendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BioData.aspx.cs">
+      <DependentUpon>BioData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BioData.aspx.designer.cs">
+      <DependentUpon>BioData.aspx</DependentUpon>
     </Compile>
     <Compile Include="GradeBook.aspx.cs">
       <DependentUpon>GradeBook.aspx</DependentUpon>

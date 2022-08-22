@@ -32,7 +32,9 @@ namespace SchoolManagementSystem
                 {
                     con.Open();
                 }
-                SqlCommand cmd = new SqlCommand("SELECT [Attendance].[FormClass], [Attendance].[StudentId], [Attendance].[Date], [Attendance].[Attended], [Attendance].[FormClass], [Attendance].[Comment], [User].[Gender], CONCAT([User].[FirstName], ' ', [User].[LastName]) As [FullName] FROM [Attendance] Join [User] ON [User].[UserId] = [Attendance].[StudentId]  ;");
+                SqlCommand cmd = new SqlCommand("SELECT [Attendance].[StudentId], [Attendance].[Date], [Attendance].[Attended], [Attendance].[Comment], [User].[Gender], [User].[LastName], [User].[FirstName] " +
+                    "FROM [Attendance] Join [User] ON [User].[UserId] = [Attendance].[StudentId]  WHERE [Attendance].[Date]='"+ calendarId.SelectedDate.ToString() +"';");
+
 
                 using (SqlDataAdapter sda = new SqlDataAdapter())
                 {
@@ -85,6 +87,21 @@ namespace SchoolManagementSystem
             //Setting the EditIndex property to -1 to cancel the Edit mode in Gridview  
             AttendanceGrid.EditIndex = -1;
             ShowGrid();
+        }
+
+        protected void calendarId_SelectionChanged(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(strcon);
+
+            calenderlbl.Text = calendarId.SelectedDate.ToString() ;
+            ShowGrid();
+            if(con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
+            SqlCommand cmd = new SqlCommand("INSERT INTO [Attendance] [Attendance].[StudentId], [Attendance].[Date], [Attendance].[Attended], [Attendance].[FormClass] VALUES([Student].[StudentId] WHERE );", con);
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
     }
 }

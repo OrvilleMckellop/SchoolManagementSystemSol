@@ -42,7 +42,16 @@ namespace SchoolManagementSystem
                         Session["userid"] = dr.GetValue(0).ToString();
                         Session["username"] = dr.GetValue(1).ToString();
                         Session["RoleId"] = dr.GetValue( 2).ToString();
-                        Session["status"] = dr.GetValue(7).ToString();
+                        Session["status"] = dr.GetValue(6).ToString();
+
+                        Session["FirstName"] = dr.GetValue(7).ToString();
+                        Session["LastName"] = dr.GetValue(8).ToString();
+                        Session["Gender"] = dr.GetValue(11).ToString();
+                        Session["RoleName"] = dr.GetValue(0).ToString();
+                        Session["Email"] = dr.GetValue(5).ToString();
+                        Session["Telephone1"] = dr.GetValue(9).ToString();
+                        Session["Telephone2"] = dr.GetValue(10).ToString();
+                        Session["UserStatus"] = dr.GetValue(12).ToString();
 
                     }
                     if (Session["RoleId"].Equals("1"))
