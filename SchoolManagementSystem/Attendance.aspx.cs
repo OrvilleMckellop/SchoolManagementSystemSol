@@ -20,6 +20,7 @@ namespace SchoolManagementSystem
             {
                 ShowGrid();
             }
+
         }
 
         //ShowGrid method for Displaying Data in Gridview  
@@ -32,9 +33,9 @@ namespace SchoolManagementSystem
                 {
                     con.Open();
                 }
-                SqlCommand cmd = new SqlCommand("SELECT [Attendance].[StudentId], [Attendance].[Date], [Attendance].[Attended], [Attendance].[Comment], [User].[Gender], [User].[LastName], [User].[FirstName] " +
-                    "FROM [Attendance] Join [User] ON [User].[UserId] = [Attendance].[StudentId]  WHERE [Attendance].[Date]='"+ calendarId.SelectedDate.ToString() +"';");
-
+                SqlCommand cmd = new SqlCommand("SELECT[Attendance].[StudentId], [Attendance].[Date], [Attendance].[Attended], [Attendance].[Comment], [User].[Gender], [User].[LastName], [User].[FirstName] " +
+                    "FROM [Attendance] Join [User] ON [User].[UserId] = [Attendance].[StudentId]  WHERE [Attendance].[Date]='" + calendarId.SelectedDate.ToString() + "';");
+                
 
                 using (SqlDataAdapter sda = new SqlDataAdapter())
                 {
@@ -55,6 +56,7 @@ namespace SchoolManagementSystem
             {
 
                 throw;
+                
             }
 
         }
@@ -94,14 +96,18 @@ namespace SchoolManagementSystem
             SqlConnection con = new SqlConnection(strcon);
 
             calenderlbl.Text = calendarId.SelectedDate.ToString() ;
-            ShowGrid();
             if(con.State == ConnectionState.Closed)
             {
                 con.Open();
             }
-            SqlCommand cmd = new SqlCommand("INSERT INTO [Attendance] [Attendance].[StudentId], [Attendance].[Date], [Attendance].[Attended], [Attendance].[FormClass] VALUES([Student].[StudentId] WHERE );", con);
+            SqlCommand cmd = new SqlCommand("INSERT INTO [Attendance] ([Attendance].[StudentId], [Attendance].[Date], [Attendance].[Attended], [Attendance].[FormClass]) " +
+                                                        "SELECT [StudentId], '"+ calendarId.SelectedDate.ToString() + "', 'False', [FromClassId] FROM [Student]", con);
             cmd.ExecuteNonQuery();
             con.Close();
+            ShowGrid();
         }
     }
 }
+/*
+SqlCommand cmd = new SqlCommand("INSERT INTO [Attendance] ([Attendance].[StudentId], [Attendance].[Date], [Attendance].[Attended], [Attendance].[FormClass]) " +
+                                                        "VALUES(,'" + calendarId.SelectedDate.ToString() + "', 'False', 1);", con);*/

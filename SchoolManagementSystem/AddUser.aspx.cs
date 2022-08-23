@@ -34,9 +34,9 @@ namespace SchoolManagementSystem
                 
 
                 SqlCommand cmd = new SqlCommand("INSERT INTO [User] (UserId, RoleId, FirstName, LastName, Email, Password, Gender, UserStatus, UserName)" +
-                                           "VALUES(" + ID_Number.Text + ", '" + RoleId.Text + "', '" + FirstName.Text + "', '" + LastName.Text + "', '" + Email.Text + "', '" + Password.Text + "', '" + Gender.Text + "', 'pending', '" + FirstName.Text + LastName.Text + "')", con);
+                                           "VALUES("+ ID_Number.Text + ", '" + RoleId.Text + "', '" + FirstName.Text + "', '" + LastName.Text + "', '" + Email.Text + "', '" + Password.Text + "', '" + Gender.Text + "', 'pending', '" +FirstName.Text + LastName.Text +"')", con);
 
-                Response.Write("Sucess!");
+                
 
                 cmd.ExecuteReader();
                 con.Close();
@@ -46,6 +46,8 @@ namespace SchoolManagementSystem
                 
                 throw;
             }
+            Response.Redirect("User.aspx");
+
         }
 
         protected void generate_Click(object sender, EventArgs e)

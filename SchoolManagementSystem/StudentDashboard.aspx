@@ -8,8 +8,8 @@
     <a class="sidebar-item" href="BioData.aspx">StudentBioData</a>
     <a class="sidebar-item" href="GradeBook.aspx">Gradebook</a>  
     <a class="sidebar-item">Assignments</a>
-    <a class="sidebar-item">Classes</a>
-    <a class="sidebar-item">Library</a>
+    <a class="sidebar-item" href="Class.aspx">Classes</a>
+    <a class="sidebar-item" href="Library.aspx">Library</a>
             
 </div>
 

@@ -8,7 +8,5 @@
     <a class="sidebar-item" href="User.aspx" >Users</a>
     <a class="sidebar-item" href="GradeBook.aspx">Gradebook</a>  
     <a class="sidebar-item" href="Assignments.aspx">Assignments</a>
-    <a class="sidebar-item" href="Class.aspx">Classes</a>
-    <a class="sidebar-item" href="Library.aspx">Library</a>
 </div>
 </asp:Content>
